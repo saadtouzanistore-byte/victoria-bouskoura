@@ -1,0 +1,997 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Victoria — Bouskoura | Appartements sur plan</title>
+<meta name="description" content="Victoria Bouskoura - Appartements sur plan à partir de 9 850 DH/m². Résidences R+5, F2, F3 et F4 à Bouskoura Ouled Saleh.">
+
+<meta name="keywords" content="Victoria Bouskoura, appartements Bouskoura, appartement Ouled Saleh, résidence 1003, résidence 1004, immobilier Casablanca, vente sur plan">
+
+<meta name="author" content="Victoria Bouskoura">
+
+<meta property="og:title" content="Victoria Bouskoura">
+
+<meta property="og:description" content="Découvrez les appartements sur plan à Bouskoura à partir de 9 850 DH/m².">
+
+<meta property="og:type" content="website">
+<style>
+30 'https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap');
+
+:root{
+  --ink:#16241F;
+  --forest:#2F5D50;
+  --forest-light:#3E7566;
+  --gold:#B08D57;
+  --gold-light:#C9A876;
+  --stone:#EDE7DB;
+  --paper:#F7F4EC;
+  --clay:#8C6F5E;
+  --line: rgba(22,36,31,0.14);
+}
+
+*{box-sizing:border-box; margin:0; padding:0;}
+html{scroll-behavior:smooth;}
+body{
+  background:var(--paper);
+  color:var(--ink);
+  font-family:'Inter', sans-serif;
+  line-height:1.55;
+  overflow-x:hidden;
+}
+@media (prefers-reduced-motion: reduce){
+  html{scroll-behavior:auto;}
+  *{animation-duration:0.001ms !important; transition-duration:0.001ms !important;}
+}
+
+h1,h2,h3{ font-family:'Fraunces', serif; font-weight:500; letter-spacing:-0.01em; color:var(--ink);}
+.eyebrow{
+  font-family:'IBM Plex Mono', monospace;
+  font-size:0.72rem;
+  letter-spacing:0.16em;
+  text-transform:uppercase;
+  color:var(--forest);
+}
+.serif-italic{ font-style:italic; font-weight:400; color:var(--gold);}
+a{color:inherit;}
+.wrap{ max-width:1120px; margin:0 auto; padding:0 32px;}
+@media(max-width:640px){ .wrap{padding:0 20px;} }
+
+/* NAV */
+header.nav{
+  position:fixed; top:0; left:0; right:0; z-index:100;
+  background:rgba(247,244,236,0.88);
+  backdrop-filter:blur(8px);
+  border-bottom:1px solid var(--line);
+}
+.nav-inner{
+  max-width:1120px; margin:0 auto; padding:18px 32px;
+  display:flex; align-items:center; justify-content:space-between;
+}
+.brand{
+  font-family:'Fraunces', serif; font-weight:600; font-size:1.15rem;
+  letter-spacing:0.02em;
+}
+.brand span{ color:var(--gold); font-style:italic; font-weight:400;}
+nav.links{ display:flex; gap:32px; font-size:0.88rem;}
+nav.links a{ text-decoration:none; color:var(--ink); position:relative; padding-bottom:2px;}
+nav.links a:after{
+  content:''; position:absolute; left:0; bottom:0; width:0; height:1px; background:var(--gold);
+  transition:width 0.25s ease;
+}
+nav.links a:hover:after, nav.links a:focus-visible:after{ width:100%; }
+.cta-btn{
+  background:var(--forest); color:var(--paper); border:none; padding:11px 22px;
+  font-family:'Inter'; font-size:0.85rem; font-weight:500; border-radius:2px;
+  cursor:pointer; text-decoration:none; display:inline-block;
+  transition:background 0.2s ease, transform 0.2s ease;
+}
+.cta-btn:hover{ background:var(--forest-light); transform:translateY(-1px); }
+.cta-btn:focus-visible, a:focus-visible, button:focus-visible, input:focus-visible{
+  outline:2px solid var(--gold); outline-offset:2px;
+}
+.mobile-toggle{ display:none; background:none; border:none; font-size:1.5rem; cursor:pointer; color:var(--ink); line-height:1; padding:4px 6px;}
+.desktop-only{ display:inline-block; }
+
+@media(max-width:800px){
+  .nav-inner{ flex-wrap:wrap; }
+  .desktop-only{ display:none; }
+  .mobile-toggle{ display:block; }
+  nav.links{
+    display:none;
+    flex-direction:column; gap:0;
+    width:100%;
+    order:3;
+    border-top:1px solid var(--line);
+    margin-top:14px;
+  }
+  nav.links.open{ display:flex; }
+  nav.links a{
+    padding:14px 4px; border-bottom:1px solid var(--line); font-size:0.95rem;
+  }
+  nav.links a:after{ display:none; }
+}
+
+/* HERO */
+.hero{
+  position:relative;
+  min-height:100vh;
+  display:flex; align-items:center;
+  padding:140px 0 80px;
+  background:
+    radial-gradient(ellipse at 80% 10%, rgba(176,141,87,0.12), transparent 55%),
+    linear-gradient(180deg, var(--paper) 0%, var(--stone) 100%);
+  overflow:hidden;
+}
+.hero-grid{
+  display:grid; grid-template-columns:1.1fr 0.9fr; gap:48px; align-items:center;
+}
+@media(max-width:900px){ .hero-grid{ grid-template-columns:1fr; } }
+.hero h1{
+  font-size:clamp(2.6rem, 5.4vw, 4.2rem);
+  line-height:1.04;
+  margin:18px 0 22px;
+}
+.hero p.lead{
+  font-size:1.08rem; color:#3a4740; max-width:46ch; margin-bottom:32px;
+}
+.hero-ctas{ display:flex; gap:16px; flex-wrap:wrap;}
+.btn-ghost{
+  border:1px solid var(--ink); padding:11px 22px; border-radius:2px;
+  text-decoration:none; font-size:0.85rem; font-weight:500;
+  transition:background 0.2s ease, color 0.2s ease;
+}
+.btn-ghost:hover{ background:var(--ink); color:var(--paper); }
+
+/* hero rendering image */
+.hero-image-wrap{
+  width:100%; border-radius:2px; overflow:hidden;
+  box-shadow:0 30px 60px -20px rgba(22,36,31,0.35);
+  opacity:0; transform:translateY(18px);
+  animation:riseIn 0.7s ease forwards;
+}
+.hero-image-wrap img{ width:100%; display:block; }
+@keyframes riseIn{ to{ opacity:1; transform:translateY(0);} }
+
+/* STATS STRIP */
+.stats{
+  background:var(--ink); color:var(--paper);
+  padding:52px 0;
+}
+.stats-grid{
+  display:grid; grid-template-columns:repeat(4,1fr); gap:32px;
+}
+@media(max-width:800px){ .stats-grid{ grid-template-columns:repeat(2,1fr);} }
+.stat-num{
+  font-family:'IBM Plex Mono', monospace; font-size:2rem; color:var(--gold-light);
+}
+.stat-label{ font-size:0.82rem; color:#c9d0cb; margin-top:6px; }
+
+/* SECTION generic */
+section{ padding:100px 0; }
+.section-head{ margin-bottom:56px; max-width:640px; }
+.section-head h2{ font-size:clamp(1.9rem,3.4vw,2.6rem); margin-top:10px; }
+.section-head p{ color:#4a564f; margin-top:14px; font-size:1.02rem; }
+
+/* SIMULATOR / COUPE VERTICALE — signature element */
+.simulator{ background:var(--stone); }
+.sim-grid{
+  display:grid; grid-template-columns:320px 1fr; gap:56px; align-items:start;
+}
+@media(max-width:900px){ .sim-grid{ grid-template-columns:1fr; } }
+
+.residence-toggle{ display:flex; gap:12px; margin-bottom:28px; }
+.res-btn{
+  padding:10px 20px; border:1px solid var(--ink); background:transparent;
+  font-family:'IBM Plex Mono', monospace; font-size:0.8rem; color:var(--ink);
+  cursor:pointer; transition:background 0.2s ease, color 0.2s ease;
+}
+.res-btn.active{ background:var(--ink); color:var(--paper); }
+
+.building{
+  display:flex; flex-direction:column-reverse; gap:6px;
+  border:1px solid var(--line); padding:10px; background:var(--paper);
+}
+.floor-btn{
+  display:flex; align-items:center; justify-content:space-between;
+  padding:14px 16px; background:transparent; border:1px solid transparent;
+  cursor:pointer; font-family:'IBM Plex Mono', monospace; font-size:0.82rem;
+  color:var(--ink); text-align:left; width:100%;
+  transition:background 0.2s ease, border-color 0.2s ease;
+}
+.floor-btn:hover{ background:rgba(47,93,80,0.06); }
+.floor-btn.active{
+  background:var(--forest); color:var(--paper); border-color:var(--forest);
+}
+.floor-btn .f-label{ font-weight:500; }
+.floor-btn .f-count{ opacity:0.75; font-size:0.75rem; }
+
+.sim-panel{
+  background:var(--paper); border:1px solid var(--line); padding:40px;
+}
+.sim-panel h3{ font-size:1.5rem; margin-bottom:6px; }
+.sim-panel .sub{ font-family:'IBM Plex Mono', monospace; font-size:0.8rem; color:var(--forest); margin-bottom:28px; }
+
+.slider-row{ margin-bottom:28px; }
+.slider-row label{ display:flex; justify-content:space-between; font-size:0.9rem; margin-bottom:10px; }
+.slider-row label b{ font-family:'IBM Plex Mono', monospace; color:var(--gold); font-weight:500;}
+input[type=range]{
+  -webkit-appearance:none; width:100%; height:2px; background:var(--line); border-radius:2px; outline:none;
+}
+input[type=range]::-webkit-slider-thumb{
+  -webkit-appearance:none; width:18px; height:18px; border-radius:50%;
+  background:var(--forest); cursor:pointer; border:3px solid var(--paper); box-shadow:0 0 0 1px var(--forest);
+}
+input[type=range]::-moz-range-thumb{
+  width:18px; height:18px; border-radius:50%; background:var(--forest); cursor:pointer; border:3px solid var(--paper); box-shadow:0 0 0 1px var(--forest);
+}
+
+.price-out{
+  display:flex; align-items:baseline; gap:10px; padding-top:22px; border-top:1px solid var(--line);
+}
+.price-out .amount{ font-family:'IBM Plex Mono', monospace; font-size:2.1rem; color:var(--ink); }
+.price-out .unit{ font-size:0.9rem; color:#6b756f; }
+.price-note{ font-size:0.78rem; color:#7a837d; margin-top:16px; }
+
+.avail-count{
+  font-family:'IBM Plex Mono', monospace; font-size:0.78rem; color:var(--forest);
+  border:1px solid var(--forest); padding:4px 10px;
+}
+
+.unit-grid{ display:grid; grid-template-columns:repeat(auto-fill, minmax(180px,1fr)); gap:12px; margin:22px 0 6px; }
+.unit-card{
+  border:1px solid var(--line); padding:16px; background:var(--stone);
+  display:flex; flex-direction:column; gap:6px;
+}
+.unit-card .u-type{ font-family:'Fraunces', serif; font-size:1.15rem; }
+.unit-card .u-surface{ font-family:'IBM Plex Mono', monospace; font-size:0.82rem; color:var(--clay); }
+.unit-card .u-price{ font-family:'IBM Plex Mono', monospace; font-size:0.95rem; color:var(--ink); margin-top:4px; }
+.badge{
+  align-self:flex-start; font-size:0.68rem; text-transform:uppercase; letter-spacing:0.06em;
+  padding:3px 8px; font-family:'IBM Plex Mono', monospace;
+}
+.badge-dispo{ background:rgba(47,93,80,0.12); color:var(--forest); }
+.badge-reserve{ background:rgba(140,111,94,0.16); color:var(--clay); }
+.unit-reserve-btn{
+  margin-top:8px; border:1px solid var(--ink); background:transparent; padding:8px 12px;
+  font-family:'Inter'; font-size:0.8rem; cursor:pointer; transition:background 0.2s ease, color 0.2s ease;
+}
+.unit-reserve-btn:hover{ background:var(--ink); color:var(--paper); }
+.unit-reserve-btn:disabled{ opacity:0.5; cursor:not-allowed; border-color:var(--line); }
+
+.modal-overlay{
+  position:fixed; inset:0; background:rgba(22,36,31,0.55); z-index:200;
+  display:none; align-items:center; justify-content:center; padding:20px;
+}
+.modal-overlay.open{ display:flex; }
+.modal-box{
+  background:var(--paper); max-width:420px; width:100%; padding:36px; position:relative;
+  border:1px solid var(--line);
+}
+.modal-close{
+  position:absolute; top:14px; right:14px; background:none; border:none;
+  font-size:1.4rem; cursor:pointer; color:var(--ink); line-height:1;
+}
+.modal-box h3{ font-size:1.3rem; margin:8px 0 4px; }
+.modal-box .sub{ font-family:'IBM Plex Mono', monospace; font-size:0.85rem; color:var(--forest); margin-bottom:20px; }
+.modal-box .form-row{ margin-bottom:16px; }
+
+/* WHY BOUSKOURA */
+.why-grid{ display:grid; grid-template-columns:repeat(auto-fit, minmax(240px,1fr)); gap:1px; background:var(--line); border:1px solid var(--line); }
+@media(max-width:800px){ .why-grid{ grid-template-columns:1fr; } }
+.why-card{ background:var(--paper); padding:36px; }
+.why-card .eyebrow{ margin-bottom:14px; }
+.why-card h3{ font-size:1.25rem; margin-bottom:12px; }
+.why-card p{ color:#4a564f; font-size:0.95rem; }
+
+.lake-view{ margin-top:2px; }
+.lake-view img{
+  width:100%; display:block; border:1px solid var(--line);
+}
+.lake-view figcaption{
+  font-size:0.85rem; color:#5c655f; margin-top:12px; max-width:60ch;
+}
+
+.map-block{
+  margin-top:48px; display:grid; grid-template-columns:280px 1fr; gap:0;
+  border:1px solid var(--line);
+}
+@media(max-width:800px){ .map-block{ grid-template-columns:1fr; } }
+.map-info{
+  background:var(--ink); color:var(--paper); padding:32px; display:flex; flex-direction:column; gap:16px; justify-content:center;
+}
+.map-info .eyebrow{ color:var(--gold-light); }
+.map-info h3{ color:var(--paper); font-size:1.15rem; }
+.map-info .btn-ghost{ border-color:var(--paper); align-self:flex-start; }
+.map-info .btn-ghost:hover{ background:var(--paper); color:var(--ink); }
+.map-frame{
+  width:100%; min-height:320px; border:none; display:block;
+}
+
+/* TYPOLOGIES */
+.types{ background:var(--ink); color:var(--paper); }
+.types .section-head p{ color:#b9c2bc; }
+.type-grid{ display:grid; grid-template-columns:repeat(auto-fit, minmax(220px,1fr)); gap:2px; background:rgba(247,244,236,0.12); }
+@media(max-width:800px){ .type-grid{ grid-template-columns:1fr; } }
+.type-card{ background:var(--ink); padding:36px; }
+.type-card .surface{ font-family:'IBM Plex Mono', monospace; color:var(--gold-light); font-size:1.4rem; margin-bottom:8px; }
+.type-card h3{ color:var(--paper); font-size:1.15rem; margin-bottom:10px; }
+.type-card p{ color:#b9c2bc; font-size:0.92rem; }
+
+/* CONTACT */
+.contact-grid{ display:grid; grid-template-columns:0.9fr 1.1fr; gap:56px; }
+@media(max-width:900px){ .contact-grid{ grid-template-columns:1fr; } }
+.contact-info .item{ margin-bottom:22px; }
+.contact-info .label{ font-family:'IBM Plex Mono', monospace; font-size:0.75rem; color:var(--forest); text-transform:uppercase; letter-spacing:0.1em; margin-bottom:4px;}
+.form-panel{ background:var(--stone); padding:36px; border:1px solid var(--line); }
+.form-row{ margin-bottom:18px; display:flex; flex-direction:column; gap:6px; }
+.form-row label{ font-size:0.85rem; }
+.form-row input, .form-row select{
+  padding:12px 14px; border:1px solid var(--line); background:var(--paper); font-family:'Inter'; font-size:0.92rem;
+}
+.form-note{ font-size:0.78rem; color:#7a837d; margin-top:14px; }
+
+footer{ background:var(--ink); color:#8f9891; padding:36px 0; font-size:0.82rem; }
+.footer-inner{ display:flex; justify-content:space-between; flex-wrap:wrap; gap:12px; }
+.footer-inner{
+    display:flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
+    gap:12px;
+}
+
+/* COLLE ICI LE CODE DE LA GALERIE */
+
+.gallery{
+     padding:80px 0;
+}
+.section-subtitle{
+    color:#777;
+    margin:10px 0 30px;
+    font-size:18px;
+}
+.gallery-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:20px;
+}
+
+.gallery-grid img{
+    width:100%;
+    height:280px;
+    object-fit:cover;
+    border-radius:18px;
+    box-shadow:0 15px 35px rgba(0,0,0,.15);
+    transition:.3s;
+    display:block;
+}
+.gallery-grid img:hover{
+    transform: scale(1.03);
+}
+.whatsapp-float {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    background: #25D366;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    z-index: 9999;
+    transition: 0.3s;
+}
+
+.whatsapp-float:hover {
+    transform: scale(1.08);
+    background: #20ba5a;
+}
+</style>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
+
+
+<link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+</head>
+
+<body>
+
+<header class="nav">
+  <div class="nav-inner">
+    <div class="brand">VICTORIA <span>Bouskoura</span></div>
+    <nav class="links" id="navLinks">
+      <a href="#projet">Le projet</a>
+      <a href="#catalogue">Catalogue</a>
+      <a href="#localisation">Localisation</a>
+      <a href="#legal">Légalité</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a href="#contact" class="cta-btn desktop-only">Être rappelé</a>
+    <button type="button" class="mobile-toggle" id="mobileToggle" aria-label="Ouvrir le menu" aria-expanded="false">☰</button>
+  </div>
+</header>
+
+<section class="hero" data-aos="fade-up">
+
+  <div class="wrap hero-grid">
+    <div>
+      <p class="eyebrow">Bouskoura — à 10 min de Casablanca</p>
+      <h1>Victoria. Un nouvel<br>art d'habiter <span class="serif-italic">au vert.</span></h1>
+      <p class="lead">Deux résidences R+5 — 7 appartements par étage en résidence 1003, 5 par étage en résidence 1004 — du studio F2 au F4 3 chambres, de 82 à 108&nbsp;m², climatisation incluse. Double sous-sol parking titré, 2 ascenseurs pour les deux résidences. Vente sur plan à partir de 9&nbsp;850&nbsp;DH/m².</p>
+      <div class="hero-ctas">
+        <a href="#catalogue" class="cta-btn">Voir les appartements disponibles</a>
+        <a href="#contact" class="btn-ghost">Parler à un commercial</a>
+      </div>
+    </div>
+    <div>
+      <div class="hero-image-wrap"> <img src="photo1.jpg" alt="Résidence Victoria Bouskoura" style="width:100%; height:520px;object-fit:contain;background:#f5f5f5; border-radius:20px;box-shadow:0 25px 60px rgba(0,0,0,.20);"
+    
+  </div>
+</section>
+
+<section class="stats" id="projet">
+  <div class="wrap stats-grid">
+    <div><div class="stat-num">R+5</div><div class="stat-label">2 résidences — 1003 &amp; 1004</div></div>
+    <div><div class="stat-num">7 / 5 par étage</div><div class="stat-label">Résidence 1003 / Résidence 1004</div></div>
+    <div><div class="stat-num">30–92 m²</div><div class="stat-label">Des appartements F2 a F4</div></div>
+    <div><div class="stat-num">9 650 DH</div><div class="stat-label">Prix de vente au m²</div></div>
+  </div>
+</section>
+<section class="gallery">
+  <div class="wrap">
+    <h2>Galerie</h2>
+    <p class="section-subtitle">
+Découvrez Victoria Bouskoura sous tous ses angles.
+</p>
+<div class="gallery-grid">
+
+      <a href="photo5.jpg" target="_blank">
+    <img src="photo5.jpg" alt="Résidence Victoria">
+</a>
+
+    <a href="photo2.jpg" target="_blank">
+    <img src="photo2.jpg" alt="Résidence Victoria">
+</a>
+
+      <a href="photo3.jpg" target="_blank">
+    <img src="photo3.jpg" alt="Résidence Victoria">
+</a>
+
+      <a href="photo4.jpg" target="_blank">
+    <img src="photo4.jpg" alt="Résidence Victoria">
+</a>
+
+    </div>
+  </div>
+</section>
+<section class="simulator" id="catalogue">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">Catalogue</p>
+      <h2>Choisissez votre appartement,<br>réservez-le en ligne.</h2>
+      <p>Deux résidences, six niveaux chacune. Choisissez la résidence et l'étage pour voir les appartements réels de ce niveau, leur superficie et leur prix.</p>
+    </div>
+    <div class="residence-toggle" id="residenceToggle"></div>
+    <div class="sim-grid">
+      <div class="building" id="building"></div>
+      <div class="sim-panel">
+        <div style="display:flex; justify-content:space-between; align-items:baseline; flex-wrap:wrap; gap:8px;">
+          <h3 id="floorTitle">Rez-de-chaussée</h3>
+          <span class="avail-count" id="availCount">7 disponibles</span>
+        </div>
+        <p class="sub" id="floorSub">Résidence 1003</p>
+        <div class="unit-grid" id="unitGrid"></div>
+        <p class="price-note">Prix calculé sur la base de 9 650 DH/m². Réservation en ligne à titre indicatif, confirmée ensuite par notre commercial.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="modal-overlay" id="modalOverlay">
+  <div class="modal-box">
+    <button class="modal-close" id="modalClose" aria-label="Fermer">×</button>
+    <p class="eyebrow">Réservation</p>
+    <h3 id="modalUnitTitle">Appartement</h3>
+    <p class="sub" id="modalUnitPrice"></p>
+    <div class="form-row">
+      <label for="modalName">Nom complet</label>
+      <input type="text" id="modalName" placeholder="Votre nom">
+    </div>
+    <div class="form-row">
+      <label for="modalPhone">Téléphone</label>
+      <input type="tel" id="modalPhone" placeholder="+212 6XX XXX XXX">
+    </div>
+    <button class="cta-btn" style="width:100%;" id="modalConfirm">Confirmer la réservation</button>
+    <p class="form-note">Cette demande sera transmise par email à notre commercial, qui vous recontactera pour finaliser.</p>
+  </div>
+</div>
+
+<section id="localisation">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">Pourquoi Bouskoura</p>
+      <h2>Le vert de la forêt,<br>la proximité de Casablanca.</h2>
+    </div>
+    <div class="why-grid">
+      <div class="why-card">
+        <p class="eyebrow">01</p>
+        <h3>Un cadre boisé</h3>
+        <p>Bouskoura est réputée pour sa forêt de pins et ses golfs, un environnement rare aussi près d'une grande métropole.</p>
+      </div>
+      <div class="why-card">
+        <p class="eyebrow">02</p>
+        <h3>Accès direct</h3>
+        <p>Autoroute et axes principaux à proximité immédiate pour rejoindre Casablanca et son aéroport en quelques minutes.</p>
+      </div>
+      <div class="why-card">
+        <p class="eyebrow">03</p>
+        <h3>Un quartier en essor</h3>
+        <p>Commerces, écoles et zones d'affaires se développent rapidement autour du projet, portant la valeur du bien dans le temps.</p>
+      </div>
+    </div>
+    <figure class="lake-view">
+      <img src="masterplan.jpg.jpeg" alt="Plan d'aménagement Victoria" style="max-width:900px; width:100%; display:block; margin:0 auto; border-radius:12px;"
+      <figcaption>Le lotissement Anansr s'organise autour de deux bassins paysagers et de larges espaces verts, à quelques pas de la résidence.</figcaption>
+    </figure>
+
+    <div class="map-block">
+      <div class="map-info">
+        <p class="eyebrow">Adresse</p>
+        <h3>Lotissement Anansr, Ouled Saleh — Bouskoura</h3>
+        <a href="https://maps.app.goo.gl/oTaAEu4s1chZvcRy5" target="_blank" rel="noopener" class="btn-ghost">Voir sur Google Maps</a>
+      </div>
+      <iframe
+        class="map-frame"
+        src="https://www.google.com/maps?q=33.422108,-7.665437&hl=fr&z=15&output=embed"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        title="Localisation du projet Victoria à Bouskoura">
+      </iframe>
+    </div>
+  </div>
+</section>
+
+<section id="equipements">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">Confort &amp; équipements</p>
+      <h2>Pensé pour le quotidien,<br>résidence par résidence.</h2>
+    </div>
+    <div class="why-grid">
+      <div class="why-card">
+        <p class="eyebrow">Parking</p>
+        <h3>Double sous-sol titré</h3>
+        <p>Deux niveaux de parking en sous-sol avec titre foncier propre, pour un stationnement sécurisé et une vraie garantie de propriété.</p>
+      </div>
+      <div class="why-card">
+        <p class="eyebrow">Ascenseurs</p>
+        <h3>2 ascenseurs pour les deux résidences</h3>
+        <p>Les résidences 1003 et 1004 se partagent deux ascenseurs pour un accès rapide et confortable à tous les étages.</p>
+      </div>
+      <div class="why-card">
+        <p class="eyebrow">Climatisation</p>
+        <h3>Climatisation incluse</h3>
+        <p>Tous les appartements, F3 comme F4, sont livrés avec la climatisation incluse dans le prix de vente.</p>
+      </div>
+      <div class="why-card">
+        <p class="eyebrow">Résidences</p>
+        <h3>1003 &amp; 1004</h3>
+        <p>Résidence 1003 : 7 appartements par étage. Résidence 1004 : 5 appartements par étage. Même standing, même adresse.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="legal" style="background:var(--stone);">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">Transparence &amp; légalité</p>
+      <h2>Un projet vérifiable,<br>titre par titre.</h2>
+      <p>Permis de construire délivré le 26 janvier 2026 par le Conseil régional de l'Ordre des Architectes. Promoteur : société EETB Développement.</p>
+    </div>
+    <div class="why-grid">
+      <div class="why-card">
+        <p class="eyebrow">Résidence 1003</p>
+        <h3>TF 165 428/63</h3>
+        <p>Lotissement Anansr — Lot S2-RC2-5, Ouled Saleh. Construction sous-sol + R+5.</p>
+      </div>
+      <div class="why-card">
+        <p class="eyebrow">Résidence 1004</p>
+        <h3>TF 165 427/63</h3>
+        <p>Lotissement Anansr — Lot S2-RC2-4, Ouled Saleh. Construction double sous-sol + R+5.</p>
+      </div>
+      <div class="why-card">
+        <p class="eyebrow">Adresse</p>
+        <h3>Lotissement Anansr</h3>
+        <p>Ouled Saleh, Bouskoura — au sein d'un ensemble aménagé avec bassins paysagers et espaces verts.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="types">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">Les appartements</p>
+      <h2>Deux formats,<br>une même exigence.</h2>
+    </div>
+  
+      <div class="type-card">
+        <div class="surface">71 – 90 m²</div>
+        <h3>2 chambres</h3>
+        <p>Séjour lumineux, cuisine équipable, balcon ou terrasse. Idéal premier achat ou investissement locatif.</p>
+      </div>
+      <div class="type-card">
+        <div class="surface">80 – 92 m²</div>
+        <h3>3 chambres</h3>
+        <p>Double exposition, espace de vie généreux, pensé pour les familles à la recherche de confort durable.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap contact-grid">
+    <div class="contact-info">
+      <p class="eyebrow">Contact</p>
+      <h2 style="margin:10px 0 28px;">Parlons de votre étage.</h2>
+      <div class="item">
+        <div class="label">Projet</div>
+        <div>Victoria, Bouskoura</div>
+      </div>
+      <div class="item">
+        <div class="label">Vente</div>
+        <div>Appartements sur plan — 9 850 DH/m²</div>
+      </div>
+      <div class="item">
+        <div class="label">Commercial</div>
+        <div>Touzani Saad</div>
+      </div>
+      <div class="item">
+    <div class="label">Promoteur</div>
+    <div>Youness Touzani</div>
+</div>
+      <div class="item">
+        <div class="label">Téléphone / WhatsApp</div>
+        <div><a href="tel:+212703650656">+212703650656</a></div>
+      </div>
+      <div class="item">
+        <div class="label">Email</div>
+        <div><a href="mailto:saadtouzani.store@gmail.com">saadtouzani.store@gmail.com</a></div>
+      </div>
+    </div
+    <div class="form-panel">
+      <div class="form-row">
+        <label for="name">Nom complet</label>
+        <input type="text" id="name" placeholder="Votre nom">
+      </div>
+      <div class="form-row">
+        <label for="phone">Téléphone</label>
+        <input type="tel" id="phone" placeholder="+212 6XX XXX XXX">
+      </div>
+      <div class="form-row">
+        <label for="floor">Étage souhaité</label>
+        <select id="floor">
+          <option>Rez-de-chaussée</option>
+          <option>1er étage</option>
+          <option>2e étage</option>
+          <option>3e étage</option>
+          <option>4e étage</option>
+          <option>5e étage</option>
+          <option>Pas encore décidé</option>
+        </select>
+      </div>
+      <button class="cta-btn" style="width:100%;" id="sendBtn">Demander un rappel</button>
+      <p class="form-note">Formulaire de démonstration — à connecter à votre messagerie ou CRM avant mise en ligne.</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap footer-inner">
+    <div>© 2026 Victoria — Bouskoura</div><
+    <div>Site de présentation — vente sur plan</div>
+  </div>
+</footer>
+
+ 
+ <script>
+const floorLabels = ["1er étage", "2e étage", "3e étage", "4e étage", "5e étage"];
+const RATE = 9650;
+
+// Plan réel résidence 1003 (aile A + aile B), reconduit sur les 6 niveaux.
+// Résidence 1004 : répartition provisoire en attendant le plan.
+const catalog = {
+  "1003": {
+    name: "Résidence 1003",
+    template: [
+      { type: "F4", surface: 98, wing: "A" },
+      { type: "F3", surface: 83, wing: "A" },
+      { type: "F3", surface: 83, wing: "A" },
+      { type: "F4", surface: 98, wing: "A" },
+      { type: "F3", surface: 105, wing: "B" },
+      { type: "F3", surface: 82, wing: "B" },
+      { type: "F4", surface: 96, wing: "B" },
+    ],
+  },
+  "1004": {
+    name: "Résidence 1004",
+    template: [
+      { type: "F4", surface: 108, wing: "A" },
+      { type: "F4", surface: 108, wing: "B" },
+    
+      { type: "F3", surface: 83, wing: "A" },
+      { type: "F3", surface: 83, wing: "B" },
+    ],
+  },
+};
+
+function buildUnits(residenceKey){
+  const units = [];
+  const template = catalog[residenceKey].template;
+  for (let f = 0; f < 6; f++){
+    template.forEach((t, idx) => {
+      units.push({
+        id: residenceKey + "-" + f + "-" + (idx + 1),
+        residence: residenceKey,
+        floor: f,
+        num: idx + 1,
+        type: t.type,
+        surface: t.surface,
+        wing: t.wing,
+      });
+    });
+  }
+  return units;
+}
+
+const allUnits = {
+  "1003": buildUnits("1003"),
+  "1004": buildUnits("1004"),
+};
+
+let reservations = {}; // unitId -> { name, phone, date }
+
+async function loadReservations(){
+  try {
+    const res = await window.storage.get('victoria-reservations', true);
+    if (res && res.value) reservations = JSON.parse(res.value);
+  } catch (e) {
+    reservations = {};
+  }
+}
+
+async function saveReservations(){
+  try {
+    await window.storage.set('victoria-reservations', JSON.stringify(reservations), true);
+  } catch (e) {
+    // storage best-effort; reservation still works locally this session
+  }
+}
+
+const residenceToggleEl = document.getElementById('residenceToggle');
+const buildingEl = document.getElementById('building');
+const floorTitle = document.getElementById('floorTitle');
+const floorSub = document.getElementById('floorSub');
+const unitGridEl = document.getElementById('unitGrid');
+const availCountEl = document.getElementById('availCount');
+
+let activeResidence = "1003";
+let activeFloor = 1;
+let pendingUnitId = null;
+
+function formatDH(n){
+  return Math.round(n).toLocaleString('fr-FR') + ' DH';
+}
+
+function renderResidenceToggle(){
+  residenceToggleEl.innerHTML = '';
+  Object.keys(catalog).forEach((key) => {
+    const btn = document.createElement('button');
+    btn.className = 'res-btn' + (key === activeResidence ? ' active' : '');
+    btn.textContent = catalog[key].name;
+    btn.addEventListener('click', () => {
+      activeResidence = key;
+      activeFloor = 1;
+      renderResidenceToggle();
+      renderBuilding();
+      renderUnits();
+    });
+    residenceToggleEl.appendChild(btn);
+  });
+}
+
+function renderBuilding(){
+  buildingEl.innerHTML = '';
+  const perFloor = catalog[activeResidence].template.length;
+  floorLabels.forEach((label, i) => {
+    const btn = document.createElement('button');
+    btn.className = 'floor-btn' + (i === activeFloor ? ' active' : '');
+    btn.innerHTML = '<span class="f-label">' + label + '</span><span class="f-count">' + perFloor + ' appts</span>';
+    btn.addEventListener('click', () => {
+      activeFloor = i;
+      renderBuilding();
+      renderUnits();
+    });
+    buildingEl.appendChild(btn);
+  });
+}
+
+function renderUnits(){
+  const units = allUnits[activeResidence].filter(u => u.floor === activeFloor);
+  floorTitle.textContent = floorLabels[activeFloor];
+  floorSub.textContent = catalog[activeResidence].name;
+
+  const availableCount = units.filter(u => !reservations[u.id]).length;
+  availCountEl.textContent = availableCount + ' / ' + units.length + ' disponibles';
+
+  unitGridEl.innerHTML = '';
+  units.forEach((u) => {
+    const isReserved = !!reservations[u.id];
+    const card = document.createElement('div');
+    card.className = 'unit-card';
+    const price = u.surface * RATE;
+    card.innerHTML =
+      '<span class="badge ' + (isReserved ? 'badge-reserve' : 'badge-dispo') + '">' + (isReserved ? 'Réservé' : 'Disponible') + '</span>' +
+    '<div class="u-type">' + (u.type === 'F3' ? '2 chambres' : '3 chambres') + '</div>' +
+      '<div class="u-surface">' + u.surface + ' m² · n°' + u.num + '</div>' +
+      '<div class="u-price">' + formatDH(price) + '</div>';
+    const btn = document.createElement('button');
+    btn.className = 'unit-reserve-btn';
+    btn.textContent = isReserved ? 'Déjà réservé' : 'Contacter le commercial';
+    btn.disabled = isReserved;
+    btn.addEventListener('click', () => openModal(u));
+    card.appendChild(btn);
+    unitGridEl.appendChild(card);
+  });
+}
+
+// Modal
+const modalOverlay = document.getElementById('modalOverlay');
+const modalUnitTitle = document.getElementById('modalUnitTitle');
+const modalUnitPrice = document.getElementById('modalUnitPrice');
+const modalName = document.getElementById('modalName');
+const modalPhone = document.getElementById('modalPhone');
+
+function openModal(unit){
+  pendingUnitId = unit.id;
+  modalUnitTitle.textContent = catalog[unit.residence].name + ' — ' + floorLabels[unit.floor] + ' — ' + unit.type + ' (' + unit.surface + ' m²)';
+  modalUnitPrice.textContent = formatDH(unit.surface * RATE);
+  modalName.value = '';
+  modalPhone.value = '';
+  modalOverlay.classList.add('open');
+  modalName.focus();
+}
+
+function closeModal(){
+  modalOverlay.classList.remove('open');
+  pendingUnitId = null;
+}
+
+document.getElementById('modalClose').addEventListener('click', closeModal);
+modalOverlay.addEventListener('click', (e) => {
+  if (e.target === modalOverlay) closeModal();
+});
+
+document.getElementById('modalConfirm').addEventListener('click', async () => {
+  const name = modalName.value.trim();
+  const phone = modalPhone.value.trim();
+  if (!name){ modalName.focus(); return; }
+  if (!pendingUnitId) return;
+
+  const unit = allUnits[activeResidence].find(u => u.id === pendingUnitId) ||
+               Object.values(allUnits).flat().find(u => u.id === pendingUnitId);
+
+  reservations[pendingUnitId] = { name, phone, date: new Date().toISOString() };
+  await saveReservations();
+  renderUnits();
+
+  const subject = encodeURIComponent('Réservation — ' + catalog[unit.residence].name + ' ' + unit.type + ' ' + unit.surface + 'm²');
+  const body = encodeURIComponent(
+    'Nom: ' + name + '\n' +
+    'Téléphone: ' + phone + '\n' +
+    'Résidence: ' + catalog[unit.residence].name + '\n' +
+    'Étage: ' + floorLabels[unit.floor] + '\n' +
+    'Appartement: ' + unit.type + ' — ' + unit.surface + ' m² (aile ' + unit.wing + ', n°' + unit.num + ')\n' +
+    'Prix: ' + formatDH(unit.surface * RATE)
+  );
+  closeModal();
+  window.location.href = 'mailto:Saadoune2aa@gmail.com?subject=' + subject + '&body=' + body;
+});
+
+(async function init(){
+  await loadReservations();
+  renderResidenceToggle();
+  renderBuilding();
+  renderUnits();
+})();
+
+document.getElementById('sendBtn').addEventListener('click', (e) => {
+  e.preventDefault();
+  const name = document.getElementById('name').value.trim();
+  const phone = document.getElementById('phone').value.trim();
+  const floor = document.getElementById('floor').value;
+  if(!name){
+    document.getElementById('name').focus();
+    return;
+  }
+  const subject = encodeURIComponent('Demande de rappel — Victoria Bouskoura');
+  const body = encodeURIComponent(
+    'Nom: ' + name + '\n' +
+    'Téléphone: ' + phone + '\n' +
+    'Étage souhaité: ' + floor
+  );
+const message = encodeURIComponent(
+  "Bonjour, je m'appelle " + name +
+  ". Je souhaite avoir des informations sur le projet Victoria Bouskoura.\n\n" +
+  "Téléphone : " + phone +
+  "\nÉtage souhaité : " + floor
+);
+
+window.open(
+  "https://wa.me/212703650656?text=" + message,
+  "_blank"
+);
+});
+
+const mq = window.matchMedia('(max-width: 800px)');
+
+// Mobile menu
+const mobileToggle = document.getElementById('mobileToggle');
+const navLinks = document.getElementById('navLinks');
+
+function closeMenu(){
+  navLinks.classList.remove('open');
+  mobileToggle.setAttribute('aria-expanded', 'false');
+  mobileToggle.textContent = '☰';
+}
+
+mobileToggle.addEventListener('click', () => {
+  const isOpen = navLinks.classList.toggle('open');
+  mobileToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+  mobileToggle.textContent = isOpen ? '✕' : '☰';
+});
+
+navLinks.querySelectorAll('a').forEach(a => {
+  a.addEventListener('click', closeMenu);
+});
+
+</script>
+<script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+
+<script>
+const lightbox = GLightbox({
+  selector: '.gallery-grid a'
+});
+</script>
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+<script>
+AOS.init({
+  duration: 900,
+  once: true
+});
+</script>
+<footer 
+<div class="footer-inner">
+  <h3>Victoria Bouskoura</h3>
+
+    <p>📍 Bouskoura – Ouled Saleh</p>
+
+    <p>📞 Commercial : Saad Touzani</p>
+
+    <p>📱 07 03 65 06 56</p>
+
+    <p>✉️ saadtouzani.store@gmail.com</p>
+
+    <p>© 2026 Victoria Bouskoura - Tous droits réservés.</p>
+</div> 
+</footer>
+<a href="https://wa.me/212703650656" class="whatsapp-float" target="_blank">
+    💬 WhatsApp
+</a>
+
+</body>
+</html>
